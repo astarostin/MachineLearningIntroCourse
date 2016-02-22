@@ -46,9 +46,6 @@ X2_test = enc.transform(data_test[['LocationNormalized', 'ContractTime']].to_dic
 X = hstack([X1_train, X2_train])
 X_test = hstack([X1_test, X2_test])
 
-print X.shape
-print X_test.shape
-
 classifier = Ridge(alpha=1)
 classifier.fit(X, Y)
 
