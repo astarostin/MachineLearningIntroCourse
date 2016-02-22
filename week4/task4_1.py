@@ -3,8 +3,6 @@ from sklearn.linear_model import Ridge
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction import DictVectorizer
 from scipy.sparse import hstack
-import numpy as np
-
 
 def out(filename, s):
 	f = open(filename, 'w')
