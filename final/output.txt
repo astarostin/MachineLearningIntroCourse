@@ -55,7 +55,7 @@ Amount of unique heroes in given matches - 108
 100.0000 - 0.75174441
 1000.0000 - 0.75174455
 10000.0000 - 0.75174441
-Best parameter C = 0.1000, best score = 
+Best parameter C = 0.1000, best score = 0.75176348
 Predictions: min = 0.0085, max = 0.9966
 
 Process finished with exit code 0
