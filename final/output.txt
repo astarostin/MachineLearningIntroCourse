@@ -1,0 +1,61 @@
+/home/astar/anaconda2/bin/python "/home/astar/labs/ML intro/final/dota_prediction.py"
+Amounts of empty values by features:
+first_blood_time (19553)
+first_blood_team (19553)
+first_blood_player1 (19553)
+first_blood_player2 (43987)
+radiant_bottle_time (15691)
+radiant_courier_time (692)
+radiant_flying_courier_time (27479)
+radiant_first_ward_time (1836)
+dire_bottle_time (16143)
+dire_courier_time (676)
+dire_flying_courier_time (26098)
+dire_first_ward_time (1826)
+
+Target variable - radiant_win
+
+Cross-validation for 30 trees:
+time = 0:04:01.942567, score = 0.68992696
+10 - 0.66542381
+20 - 0.68294511
+30 - 0.68992696
+40 - 0.69429419
+Best parameter n_estimators = 40, best score = 0.69429419
+
+Cross-validation for logistic regression:
+time = 0:00:20.772451, score = 0.7163
+0.0001 - 0.71112457
+0.0010 - 0.71607425
+0.0100 - 0.71627956
+0.1000 - 0.71625531
+1.0000 - 0.71625245
+10.0000 - 0.71625211
+100.0000 - 0.71625209
+1000.0000 - 0.71625211
+10000.0000 - 0.71625211
+Best parameter C = 0.0100, best score = 0.71627956
+0.0001 - 0.71116640
+0.0010 - 0.71616518
+0.0100 - 0.71636164
+0.1000 - 0.71634138
+1.0000 - 0.71633856
+10.0000 - 0.71633812
+100.0000 - 0.71633810
+1000.0000 - 0.71633810
+10000.0000 - 0.71633810
+Best parameter C = 0.0100, best score = 0.71636164
+Amount of unique heroes in given matches - 108
+0.0001 - 0.72489614
+0.0010 - 0.74610036
+0.0100 - 0.75155037
+0.1000 - 0.75176348
+1.0000 - 0.75174948
+10.0000 - 0.75174518
+100.0000 - 0.75174441
+1000.0000 - 0.75174455
+10000.0000 - 0.75174441
+Best parameter C = 0.1000, best score = 
+Predictions: min = 0.0085, max = 0.9966
+
+Process finished with exit code 0
