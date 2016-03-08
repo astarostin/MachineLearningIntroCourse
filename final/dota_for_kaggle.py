@@ -59,7 +59,7 @@ def prepare_dataframe(df, test_set=False):
 					   	'radiant_courier_time', 'dire_courier_time',\
 				   		'radiant_flying_courier_time', 'dire_flying_courier_time',\
 				   		'radiant_first_ward_time', 'dire_first_ward_time']
-	heroes = data[heroes_features]
+	heroes = df[heroes_features]
 	heroes_levels = df[heroes_features_level]
 	heroes_xp = df[heroes_features_xp]
 	heroes_gold = df[heroes_features_gold]
@@ -136,7 +136,7 @@ def prepare_dataframe(df, test_set=False):
 			if time_diff < 0:
 				times_features[i, j/2] = 1
 			elif time_diff > 0:
-				times_features[i, 0] = -1
+				times_features[i, j/2] = -1
 
 	# remove unused features
 	new_heroes_features = np.delete(new_heroes_features, index_2_delete, axis=1)
@@ -157,7 +157,7 @@ def prepare_dataframe(df, test_set=False):
 data = pd.read_csv('features.csv', index_col='match_id')
 
 # optional line: pick random N rows from data for quicker testing
-# data = data.ix[np.random.choice(data.index, 10000, replace=False)]
+# data = data.ix[np.random.choice(data.index, 3000, replace=False)]
 
 # separate target variable and training features
 Y = data['radiant_win']
